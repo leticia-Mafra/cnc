@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renove Aqui CNC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Renove Aqui CNC</h1>
+        <p>Manutenção, Venda e Serviços para Máquinas CNC</p>
+    </header>
+
+    <main>
+        <!-- Saudações e informações iniciais -->
+        <section class="intro">
+            <h2>Olá, somos a Renove Aqui!</h2>
+            <p>Nossos serviços oferecidos: </p>
+            <ul>
+                <li>Manutenção em Máquinas CNC</li>
+                <li>Venda de Máquinas CNC</li>
+                <li>Consultoria Técnica Especializada</li>
+            </ul>
+            <p>Para mais informações: Telefone para contato: (11) 9999-9999</p>
+        </section>
+
+        <!-- Seção de Máquinas -->
+        <section class="machines">
+            <h2>Máquinas Disponíveis</h2>
+            <div class="machine-container">
+                <!-- Máquina 1 -->
+                <div class="machine" onclick="showDetails('machine1')">
+                    <img src="maquina-CNC-1.jpg" alt="Máquina CNC de última geração">
+                    <p class="brief-description">Máquina CNC de última geração - Precisão altíssima.</p>
+                    <div class="detailed-description" id="machine1">
+                        <p>Esta é uma máquina CNC de última geração com precisão altíssima, perfeita para cortes detalhados em diversos tipos de materiais. É indicada tanto para pequenas oficinas quanto para grandes fábricas, proporcionando facilidade de manutenção e eficiência inigualável.</p>
+                    </div>
+                </div>
+                
+                <!-- Máquina 2 -->
+                <div class="machine" onclick="showDetails('machine2')">
+                    <img src="máquinas-CNC.jpg" alt="Máquina CNC 2024">
+                    <p class="brief-description">Máquina CNC 2024 - Alta precisão e eficiência.</p>
+                    <div class="detailed-description" id="machine2">
+                        <p>Esta é uma máquina CNC de 2024, oferecendo precisão e eficiência superiores. Ideal para grandes fábricas e projetos que exigem produção em massa com qualidade de corte excepcional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Telefone para Contato: (11) 1234-5678</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
