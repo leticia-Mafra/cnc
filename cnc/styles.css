@@ -6,6 +6,7 @@ body {
 }
 
 header {
+    position: relative;
     background-color: #333;
     color: white;
     padding: 20px;
@@ -17,17 +18,74 @@ h1, h2 {
 }
 
 main {
-    padding: 20px;
+    padding: 65px;
+    margin-bottom: 60px;
 }
 
-.intro {
+footer {
     text-align: center;
-    margin-bottom: 30px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.back-button {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.back-button button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.back-button button:hover {
+    background-color: #777;
+}
+
+/* Tabela de especificações técnicas */
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.specs-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor cinza claro */
+}
+
+.specs-table tr:nth-child(odd) {
+    background-color: #ffffff; /* Cor branca */
+}
+
+.specs-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.specs-table tr:first-child td {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.specs-table tr:last-child td {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* Alinhamento das máquinas lado a lado */
+.machine-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .machines {
@@ -67,27 +125,19 @@ ul {
     width: 100%;
     height: auto;
 }
-
-.brief-description {
-    font-weight: bold;
-    margin: 10px 0;
-    font-size: 16px;
+.intro {
+   
+max-width: 800px; /* Define uma largura máxima para a seção */
+margin: 0 auto; /* Centraliza a seção horizontalmente */
+text-align: center; /* Centraliza o texto dentro da seção */
+padding: 20px;
+}
+.intro ul {
+list-style-position: inside; /* Alinha o ponto com o texto */
+padding: 0;    
+display: inline-block; /* Centraliza a lista */
+text-align: left; /* Garante o alinhamento dos itens na lista */
 }
 
-.detailed-description {
-    display: none;
-    background-color: #f9f9f9;
-    padding: 10px;
-    border-top: 1px solid #ccc;
-    text-align: left;
-}
 
-footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+
