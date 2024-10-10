@@ -206,3 +206,79 @@ footer {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
+
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        margin: 0; /* Remove margens do body */
+    }
+
+    header {
+        padding: 20px; /* Reduz o padding do header */
+        width: 100%; /* Garante que o header ocupe 100% da largura */
+        box-sizing: border-box; /* Inclui o padding na largura total */
+    }
+
+    main {
+        padding: 20px; /* Reduz o padding do main */
+        width: 100%; /* Garante que o main ocupe 100% da largura */
+        box-sizing: border-box; /* Inclui o padding na largura total */
+    }
+
+    .specs-table {
+        width: 100%; /* A tabela ocupa toda a largura da tela */
+    }
+
+    .machine-container {
+        flex-direction: column; /* Empilha as máquinas verticalmente */
+        align-items: center; /* Centraliza os itens */
+        width: 100%; /* Garante que o contêiner ocupe 100% da largura */
+        box-sizing: border-box; /* Inclui o padding na largura total */
+    }
+
+    .machine {
+        width: 90%; /* Largura dos cartões ajustada para 90% */
+        max-width: 300px; /* Define uma largura máxima para os cartões */
+    }
+
+    .intro {
+        width: 90%; /* Ajusta a largura da seção de introdução */
+        margin: 0 auto; /* Centraliza a seção de introdução */
+    }
+
+    .contact-button {
+        padding: 10px 20px; /* Ajusta o tamanho do botão */
+        font-size: 0.9em; /* Reduz o tamanho da fonte do botão */
+    }
+
+    .brief-description {
+        height: auto; /* Permite que a descrição se ajuste ao conteúdo */
+    }
+
+    .image-container img {
+        width: 100%; /* Ajusta a imagem para ocupar toda a largura */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+}
+
+/* Estilos para telas muito pequenas (smartphones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Reduz o tamanho do título principal */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Reduz o tamanho do subtítulo */
+    }
+
+    .contact-button {
+        padding: 8px 15px; /* Ajusta ainda mais o tamanho do botão */
+        font-size: 0.8em; /* Reduz o tamanho da fonte do botão */
+    }
+
+    .machine {
+        height: auto; /* Permite que os cartões se ajustem ao conteúdo */
+    }
+}
+
