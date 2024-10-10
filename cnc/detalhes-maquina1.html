@@ -8,17 +8,22 @@
 </head>
 <body>
     <header>
-        <a href="index.html" class="back-button"></a>
-        <button>Voltar</button>
         <h1>Renove Aqui CNC</h1>
         <p>Manutenção, Venda e Serviços para Máquinas CNC</p>
     </header>
 
     <main>
-        <img src="maquina-CNC-1.jpg" alt="Máquina CNC de última geração">
-        <h2>Máquina CNC de última geração - Especificações Técnicas</h2>
-        <p>Esta é uma máquina CNC de última geração com precisão altíssima, perfeita para cortes detalhados em diversos tipos de materiais. Ideal para pequenas oficinas e grandes fábricas.</p>
+        <h2 class="specs-title">Máquina CNC de última geração - Especificações Técnicas</h2>
+        <div class="image-container">
+            <img src="maquina-CNC-1.jpg" alt="Máquina CNC de última geração" class="central-image">
+        </div>
         
+        <!-- Dividindo a descrição em duas partes -->
+        <div class="description">
+            <p>Esta é uma máquina CNC de última geração com precisão altíssima, perfeita para cortes.</p>
+            <p>Detalhados em diversos tipos de materiais. Ideal para pequenas oficinas e grandes fábricas.</p>
+        </div>
+    
         <table class="specs-table">
             <tr>
                 <td>Precisão</td>
@@ -37,12 +42,21 @@
                 <td>2500mm x 1300mm</td>
             </tr>
         </table>
-
-        <!-- Botão para voltar -->
-        <a href="index.html">
-            <button>Voltar</button>
-        </a>
+    
+        <div class="button-container">
+            <a href="index.html">
+                <button class="contact-button">Voltar</button>
+            </a>
+            <a href="tel:+1112345678">
+                <button class="contact-button">Telefone para Contato</button>
+            </a>
+            <a href="mailto:contato@renoveaqui.com">
+                <button class="contact-button">Email para Contato</button>
+            </a>
+        </div>
+        
     </main>
+    
 
     <footer>
         <p>Telefone para Contato: (11) 1234-5678</p>

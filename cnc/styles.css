@@ -9,12 +9,13 @@ header {
     position: relative;
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
 }
 
 h1, h2 {
     margin: 0;
+    text-align: center; /* Garante que o título esteja centralizado */
 }
 
 main {
@@ -26,7 +27,7 @@ footer {
     text-align: center;
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 40px;
     position: relative;
     width: 100%;
     bottom: 0;
@@ -51,13 +52,25 @@ footer {
     background-color: #777;
 }
 
-/* Tabela de especificações técnicas */
-.specs-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+.central-image {
+    max-width: 100%; /* Ajusta a imagem para não ultrapassar o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 2px solid #333; /* Adiciona a borda à imagem */
 }
 
+.description {
+    text-align: center; /* Centraliza o texto da descrição */
+    margin: 20px 0; /* Espaço acima e abaixo do texto */
+    font-size: 1.07em; /* Aumenta o tamanho do texto */
+}
+
+.specs-table {
+    margin: 20px auto; /* Centraliza a tabela e adiciona espaço acima */
+    width: 40%; /* Ajusta a largura da tabela para ser menor que a imagem */
+    max-width: 800px; /* Define um tamanho máximo para a tabela */
+}
+
+/* Tabela de especificações técnicas */
 .specs-table tr:nth-child(even) {
     background-color: #f2f2f2; /* Cor cinza claro */
 }
@@ -81,63 +94,115 @@ footer {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-/* Alinhamento das máquinas lado a lado */
-.machine-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
+.specs-title {
+    text-align: center; /* Centraliza o título */
+    margin-top: 20px; /* Espaço acima do título */
 }
 
-.machines {
-    text-align: center;
-    margin-bottom: 30px;
+.image-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente a imagem */
+    margin: 20px 0; /* Espaço acima e abaixo da imagem */
+}
+
+/* Alinhamento das máquinas lado a lado */
+/* Ajustes na contêiner de máquinas */
+.machine-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Alinha à esquerda */
+    gap: 20px; /* Espaçamento entre as máquinas */
+    max-width: 900px; /* Largura máxima para o contêiner das máquinas */
+    margin: 0 auto; /* Centraliza o contêiner das máquinas na página */
+    padding: 0; /* Remove o padding para um alinhamento mais preciso */
 }
 
 .machines h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    text-align: center; /* Centraliza o título */
+    margin-top: 40px; /* Adiciona espaçamento superior para separar do conteúdo acima */
 }
 
-/* Container para alinhar as máquinas lado a lado */
-.machine-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
+/* Ajustes das máquinas */
 .machine {
     background-color: white;
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 300px;
+    border: 2px solid #333;
+    width: 280px; /* Largura fixa para os cartões */
     cursor: pointer;
     position: relative;
     transition: transform 0.2s;
-    text-align: center;
+    text-align: center; /* Centraliza o conteúdo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px; /* Altura total do cartão */
 }
 
 .machine:hover {
     transform: scale(1.05);
 }
 
+/* Definir um tamanho menor para as imagens */
 .machine img {
-    width: 100%;
-    height: auto;
+    width: 95%; /* Reduz a largura da imagem para 90% do card */
+    height: 180px; /* Aumenta a altura da imagem se necessário, ajustando conforme preferido */
+    object-fit: cover; /* Mantém a proporção das imagens */
+    margin: 0 auto; /* Centraliza horizontalmente a imagem */
 }
+
+/* Ajustes na descrição */
+.brief-description {
+    background-color: #cccaca; /* Fundo cinza claro */
+    padding: 20px;
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 175px; /* Mantém a altura fixa para garantir alinhamento */
+    text-align: center; /* Centraliza o texto da descrição */
+}
+
 .intro {
-   
-max-width: 800px; /* Define uma largura máxima para a seção */
-margin: 0 auto; /* Centraliza a seção horizontalmente */
-text-align: center; /* Centraliza o texto dentro da seção */
-padding: 20px;
+    width: calc(280px * 3 + 15px); /* Largura total dos cartões (3 cartões + 2 espaços de 20px) */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Adiciona espaçamento interno */
+    border: 2px solid #333; /* Borda ao redor da seção */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave para destacar */
+    background-color: white; /* Fundo branco para contraste */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 40px; /* Espaçamento entre a introdução e o próximo conteúdo */
 }
+
 .intro ul {
-list-style-position: inside; /* Alinha o ponto com o texto */
-padding: 0;    
-display: inline-block; /* Centraliza a lista */
-text-align: left; /* Garante o alinhamento dos itens na lista */
+    list-style-position: inside; /* Alinha os itens com o texto */
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+.button-container {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    margin: 30px 0; /* Espaço acima e abaixo dos botões */
 }
 
+.contact-button {
+    background-color: #555; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    padding: 18px 45px; /* Tamanho do botão */
+    margin: 0 25px; /* Espaçamento entre os botões */
+    border-radius: 10px; /* Borda arredondada */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    font-size: 1em; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Efeito de transição ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
 
+.contact-button:hover {
+    background-color: #777; /* Cor do botão ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
 
