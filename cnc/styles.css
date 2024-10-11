@@ -154,7 +154,7 @@ footer {
 
 /* Ajustes na descrição */
 .brief-description {
-    background-color: #cccaca; /* Fundo cinza claro */
+    color: #333;
     padding: 20px;
     margin: 0;
     flex-grow: 1;
